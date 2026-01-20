@@ -70,6 +70,8 @@ input, textarea, select {
 ul {
     padding: 0 0;
     margin: 0 0;
+    list-style: none;
+    list-style-type: none;
 }
 
 .user {
@@ -119,10 +121,11 @@ header .container {
         align-items: center;
         gap: 38px;
 
-        nav {
+        nav ul {
             display: flex;
             justify-content: space-between;
             gap: 16px;
+            
             a {
                 font-weight: 500;
             }
