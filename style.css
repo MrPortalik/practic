@@ -125,7 +125,7 @@ header .container {
             display: flex;
             justify-content: space-between;
             gap: 16px;
-            
+
             a {
                 font-weight: 500;
             }
@@ -247,7 +247,7 @@ header .container {
     margin-bottom: 9.7vw;
     position: relative;
     
-    #heroTxt {
+    .heroTxt {
         max-width: 612px;
         width: 50%;
         
@@ -284,38 +284,38 @@ header .container {
         }
     }
     
-    #heroImg {
+    .heroImg {
         position: absolute;
         top: -56px;
         right: -8px;
         z-index: -1;
         
-        #heroImg img {
+        .heroImg img {
             width: 100%;
             height: auto;
         }
     }
 
     @media (max-width: 1920px) {
-        #heroImg {
+        .heroImg {
             width: 51%;
         }
 
-        #heroImg img {
+        .heroImg img {
             width: 100%;
             height: auto;
         }
     }
 
     @media (max-width: 900px) {
-        #heroImg {
+        .heroImg {
             width: 60vw;
             height: auto;
         }
     }
     
     @media (max-width: 450px) {
-        #heroImg {
+        .heroImg {
             margin: 0 0;
             width: 80%;
             position: static;
@@ -324,13 +324,13 @@ header .container {
             margin-top: -56px;
         }
 
-        #heroImg img {
+        .heroImg img {
             width: 100%;
             margin: 0 0;
         }
         display: block;
 
-        #heroTxt {
+        .heroTxt {
             width: 100%;
             justify-content: center;
         }
@@ -382,7 +382,7 @@ header .container {
             flex-direction: column-reverse;
         }
 
-        #heroTxt {
+        .heroTxt {
             padding-top: 0;
         }
     }
