@@ -1,0 +1,88 @@
+@keyframes top-span-in-active {
+    from {
+        transform: rotate(0deg);
+        top: calc(50% - 1px - 7px);
+    }
+    50% {
+        transform: rotate(0deg);
+        top: calc(50% - 1px);
+    }
+    to {
+        transform: rotate(45deg);
+        top: calc(50% - 1px);
+    }
+}
+
+@keyframes middle-span-in-active {
+    from {
+        width: calc(100% - 16px);
+    }
+    50% {
+        width: calc(100% - 16px);
+    }
+    to {
+        width: 0;
+    }
+}
+
+
+
+@keyframes bottom-span-in-active {
+    from {
+        transform: rotate(0deg);
+        top: calc(50% - 1px + 7px);
+    }
+    50% {
+        transform: rotate(0deg);
+        top: calc(50% - 1px);
+    }
+    to {
+        transform: rotate(-45deg);
+        top: calc(50% - 1px);
+    }
+}
+
+@keyframes top-span-out-active {
+    from {
+        transform: rotate(45deg);
+        top: calc(50% - 1px);
+    }
+    50% {
+        transform: rotate(0deg);
+        top: calc(50% - 1px);
+    }
+    to {
+        transform: rotate(0deg);
+        top: calc(50% - 1px - 7px);
+    }
+}
+
+@keyframes middle-span-out-active {
+    from {
+        width:0;
+    }
+    50% {
+        width:0;
+    }
+    to {
+        width: calc(100% - 16px);
+    }
+}
+
+
+@keyframes bottom-span-out-active {
+    from {
+        transform: rotate(-45deg);
+        top: calc(50% - 1px);
+    }
+    50% {
+        transform: rotate(0deg);
+        top: calc(50% - 1px);
+    }
+    to {
+        transform: rotate(0deg);
+        top: calc(50% - 1px + 7px);
+    }
+}
+
+
