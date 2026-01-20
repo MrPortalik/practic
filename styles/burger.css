@@ -1,0 +1,36 @@
+.child {
+    display: none;
+}
+
+._active {
+    background: #ffd343;
+    border: 2px solid #FCD34D;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    
+    .child {
+        display: block;
+    }
+
+    ul {
+        position: absolute;
+        right: 0;
+        top: 120%;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        list-style-type: '- ';
+        text-align: start;
+        gap: 10px;
+        background-color: #fff;
+        border: #FCD34D 4px solid;
+        border-radius: 15px;
+        padding: 12px;
+    }
+
+    a {
+        display: block !important;
+    }
+}
