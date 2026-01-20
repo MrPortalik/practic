@@ -44,9 +44,15 @@
                         <span>request a quote</span>
                         <img src="/resources/images/arrow.svg" alt="Arrow" />
                 </button>
-                <button class="burger clickable">
-                    <img src="/resources/images/burger.svg" alt="menu" width="24" height="24">
-                    <span class="child">
+                <div class="menuColumn">
+                    <button class="burger clickable">
+                        <!-- <img src="/resources/images/burger.svg" alt="menu" width="24" height="24"> -->
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                    <div class="list">
                         <ul>
                             <li>
                                 <a href="">Products</a>
@@ -67,15 +73,16 @@
                                 <a href="">Request a quote</a>
                             </li>
                         </ul>
-                    </span>
-                </button>
+                    </div>
+                </div>
             </div>
         </div>
     </header>
     
     
+    
     <section id="hero">
-        <div class="heroImg">  <!--todo: поменять все id кроме секций на классы -->
+        <div class="heroImg">
             <picture><source 
                 srcset="/resources/images/heroImg.webp" type="image/webp">
                 <img src="/resources/images/heroImg.jpeg" alt="Builder" width='740' height="832"/>
