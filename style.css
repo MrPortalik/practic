@@ -143,12 +143,12 @@ header .container {
         justify-content: space-between;
         gap: 24px;
 
-        a {
+        .contacts {
             display: flex;
             justify-content: space-between;
             gap: 16px;
             align-items: center;
-            font-weight: 600;
+            font-weight: 500;
             font-size: 16px;
             letter-spacing: 0.5px;
             color: #0369A1;
@@ -185,6 +185,14 @@ header .container {
             flex: none;
             order: 1;
             flex-grow: 0;
+
+            span {
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 24px;
+                letter-spacing: 0.5px;
+                color: #78350F;
+            }
 
             @media (max-width: 900px) {
                     display: none;

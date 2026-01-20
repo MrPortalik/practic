@@ -24,10 +24,18 @@
         list-style-type: '- ';
         text-align: start;
         gap: 10px;
-        background-color: #fff;
-        border: #FCD34D 4px solid;
+        background-color: #FCD34D;
+        border: #d7b030 4px solid;
         border-radius: 15px;
-        padding: 12px;
+        padding: 12px 6px 12px 12px;
+
+        li a {
+            color: #78350F;
+            align-self: center;
+            font-weight: 800;
+            font-size: 14px;
+            letter-spacing: 0.2px;
+        }
     }
 
     a {
