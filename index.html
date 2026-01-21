@@ -1,10 +1,12 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!--todo: порыться в css и сделать на планшетах центровку для объектов-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Практический проект</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/resources/libs/baguetteBox/baguetteBox.min.css">
+    <script src="/resources/libs/baguetteBox/baguetteBox.min.js" async></script>
 </head>
 <body>
     <header>
@@ -46,7 +48,6 @@
                 </button>
                 <div class="menuColumn _off">
                     <button class="burger clickable">
-                        <!-- <img src="/resources/images/burger.svg" alt="menu" width="24" height="24"> -->
                         <span></span>
                         <span></span>
                         <span></span>
@@ -116,12 +117,40 @@
         </div>
     </section>
 
-    <section id="gallery">
-        <div class="container">
+    <!--Добавить слайдер отдельно-->
 
+    <section id="gallery"> 
+        <div class="container">
+            <h2>Ni-Gallery</h2> <!--Это Андрей придумал :D-->
+            <div class="galleryBox">
+                <a href="/resources/images/galleryImags/img1.jpg">
+                    <img src="/resources/images/galleryImags/img1.jpg" alt="Чернокожий джентльмен с лишним весом">
+                </a>
+                <a href="/resources/images/galleryImags/img2.webp">
+                    <img src="/resources/images/galleryImags/img2.webp" alt="Секси-Нигер">
+                </a>
+                <a href="/resources/images/galleryImags/img3.webp">
+                    <img src="/resources/images/galleryImags/img3.webp" alt="Владимир Обамович">
+                </a>
+                <a href="/resources/images/galleryImags/img4.webp">
+                    <img src="/resources/images/galleryImags/img4.webp" alt="Белоснеж и 18,5 гомо-гномов от Netflix">
+                </a>
+                <a href="/resources/images/galleryImags/img5.jpg">
+                    <img src="/resources/images/galleryImags/img5.jpg" alt="Отчим Валера">
+                </a>
+                <a href="/resources/images/galleryImags/img6.jpg">
+                    <img src="/resources/images/galleryImags/img6.jpg" alt="Зубастик 2077">
+                </a>
+                <a href="/resources/images/galleryImags/img7.jpg">
+                    <img src="/resources/images/galleryImags/img7.jpg" alt="Свой среди чужих">
+                </a>
+                <a href="/resources/images/galleryImags/img8.jpg">
+                    <img src="/resources/images/galleryImags/img8.jpg" alt="Звуки битбокса 300м от вас">
+                </a>
+            </div>
         </div>
     </section>
-
+    
     <section id="accordeon">
         <div class="container">
             

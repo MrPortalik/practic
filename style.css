@@ -1,5 +1,6 @@
 @import url(/styles/burger.css);
 @import url(/styles/animations.css);
+@import url(/styles/gallery.css);
 
 @font-face {
     font-family: 'Roboto';
@@ -28,9 +29,19 @@ body {
 
 h1, h2 {
     font-weight: 800;
-    font-size: 56px;
+    font-size: clamp(48px, 34.67px + 1.48vw, 56px);
     line-height: 1.1;
     letter-spacing: 0;
+                
+
+    @media (max-width: 900px) {
+        font-size: clamp(32px, 16.00px + 3.56vw, 48px);
+        text-align: center;
+    }
+
+    @media (max-width: 450px) {
+        font-size: clamp(28px, 18.15px + 3.08vw, 32px);
+    }
 }
 
 p {
@@ -224,18 +235,20 @@ header .container {
     .heroTxt {
         max-width: 612px;
         width: 50%;
+
+        @media (max-width: 900px) {
+                justify-items: center;
+            }
         
         .quote {
             margin-bottom: 8.8vw;
             
-            @media (max-width: 450px) {
-                justify-items: center;
-            }
             h2 {
                 font-size: clamp(56px, 29.33px + 2.96vw, 72px);
             
                 @media (max-width: 900px) {
                     font-size: clamp(40px, 30.00px + 2.22vw, 50px);
+                    text-align: center;
                 }
             
                 @media (max-width: 450px) {
@@ -285,6 +298,22 @@ header .container {
         .heroImg {
             width: 60vw;
             height: auto;
+            margin: 0 0;
+            width: 80%;
+            position: static;
+            justify-self: end;
+            margin-right: -8px;
+            margin-top: -56px;
+        }
+        .heroImg img {
+            width: 100%;
+            margin: 0 0;
+        }
+        display: block;
+
+        .heroTxt {
+            width: 100%;
+            justify-content: center;
         }
     }
     
@@ -350,7 +379,7 @@ header .container {
         }
     }
 
-    @media (max-width: 450px) {
+    @media (max-width: 900px) {
         .container {
             display: flex;
             flex-direction: column-reverse;
