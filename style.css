@@ -237,6 +237,7 @@ header .container {
         width: 50%;
 
         @media (max-width: 900px) {
+                margin: auto;
                 justify-items: center;
             }
         
