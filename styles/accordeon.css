@@ -1,0 +1,40 @@
+#FAQ ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#FAQ li{
+    background-color: rgba(6, 226, 255, 0.3);
+    border-radius: 12px;
+    padding: 15px 20px;
+}
+
+#FAQ h3 {
+    font-weight: 600;
+    font-size: clamp(28px, 20.94px + 0.78vw, 36px);
+    line-height: 1.1;
+    letter-spacing: 0;
+    margin: 0;
+    color: #0369A1;
+                
+
+    @media (max-width: 900px) {
+        font-size: clamp(22px, 16.00px + 1.33vw, 28px);
+        text-align: center;
+    }
+
+    @media (max-width: 450px) {
+        font-size: clamp(18px, 14.00px + 0.89vw, 22px);
+    }
+}
+
+.question {
+    display: none;
+}
+
+._opened {
+    .question {
+        display: block;
+    }
+}

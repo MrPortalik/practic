@@ -1,6 +1,7 @@
 @import url(/styles/burger.css);
 @import url(/styles/animations.css);
 @import url(/styles/gallery.css);
+@import url(/styles/accordeon.css);
 
 @font-face {
     font-family: 'Roboto';
@@ -41,6 +42,24 @@ h1, h2 {
 
     @media (max-width: 450px) {
         font-size: clamp(28px, 18.15px + 3.08vw, 32px);
+    }
+}
+
+h3 {
+    font-weight: 800;
+    font-size: clamp(32px, 17.88px + 1.57vw, 48px);
+    line-height: 1.1;
+    letter-spacing: 0;
+    margin: 0;
+                
+
+    @media (max-width: 900px) {
+        font-size: clamp(28px, 24.00px + 0.89vw, 32px);
+        text-align: center;
+    }
+
+    @media (max-width: 450px) {
+        font-size: clamp(20px, 16.00px + 0.89vw, 24px);
     }
 }
 
