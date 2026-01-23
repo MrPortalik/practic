@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/resources/libs/baguetteBox/baguetteBox.min.css">
     <script src="/resources/libs/baguetteBox/baguetteBox.min.js" async></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
@@ -123,30 +125,53 @@
         <div class="container">
             <h2>Ni-Gallery</h2> <!--Это Андрей придумал :D-->
             <div class="galleryBox">
-                <a href="/resources/images/galleryImags/img1.jpg">
-                    <img src="/resources/images/galleryImags/img1.jpg" alt="Чернокожий джентльмен с лишним весом">
+                <a href="/resources/images/galleryImages/img1.jpg">
+                    <img src="/resources/images/galleryImages/img1.jpg" alt="Чернокожий джентльмен с лишним весом">
                 </a>
-                <a href="/resources/images/galleryImags/img2.webp">
-                    <img src="/resources/images/galleryImags/img2.webp" alt="Секси-Нигер">
+                <a href="/resources/images/galleryImages/img2.webp">
+                    <img src="/resources/images/galleryImages/img2.webp" alt="Секси-Нигер">
                 </a>
-                <a href="/resources/images/galleryImags/img3.webp">
-                    <img src="/resources/images/galleryImags/img3.webp" alt="Владимир Обамович">
+                <a href="/resources/images/galleryImages/img3.webp">
+                    <img src="/resources/images/galleryImages/img3.webp" alt="Владимир Обамович">
                 </a>
-                <a href="/resources/images/galleryImags/img4.webp">
-                    <img src="/resources/images/galleryImags/img4.webp" alt="Белоснеж и 18,5 гомо-гномов от Netflix">
+                <a href="/resources/images/galleryImages/img4.webp">
+                    <img src="/resources/images/galleryImages/img4.webp" alt="Белоснеж и 18,5 гомо-гномов от Netflix">
                 </a>
-                <a href="/resources/images/galleryImags/img5.jpg">
-                    <img src="/resources/images/galleryImags/img5.jpg" alt="Отчим Валера">
+                <a href="/resources/images/galleryImages/img5.jpg">
+                    <img src="/resources/images/galleryImages/img5.jpg" alt="Отчим Валера">
                 </a>
-                <a href="/resources/images/galleryImags/img6.jpg">
-                    <img src="/resources/images/galleryImags/img6.jpg" alt="Зубастик 2077">
+                <a href="/resources/images/galleryImages/img6.jpg">
+                    <img src="/resources/images/galleryImages/img6.jpg" alt="Зубастик 2077">
                 </a>
-                <a href="/resources/images/galleryImags/img7.jpg">
-                    <img src="/resources/images/galleryImags/img7.jpg" alt="Свой среди чужих">
+                <a href="/resources/images/galleryImages/img7.jpg">
+                    <img src="/resources/images/galleryImages/img7.jpg" alt="Свой среди чужих">
                 </a>
-                <a href="/resources/images/galleryImags/img8.jpg">
-                    <img src="/resources/images/galleryImags/img8.jpg" alt="Звуки битбокса 300м от вас">
+                <a href="/resources/images/galleryImages/img8.jpg">
+                    <img src="/resources/images/galleryImages/img8.jpg" alt="Звуки битбокса 300м от вас">
                 </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="slider">
+        <div class="container">
+            <h2>Наши работы</h2>
+
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./resources/images/sliderImages/slide1.webp" alt="Слайд 1" width="600">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./resources/images/sliderImages/slide2.webp" alt="Слайд 2" width="600">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./resources/images/sliderImages/slide3.webp" alt="Слайд 3" width="600">
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
     </section>
@@ -154,7 +179,7 @@
     <section id="FAQ"> <!--Аккордеон-->
         <div class="container">
             <div class="questionsBlock">
-                <h2>FAQ U</h2>
+                <h2>FAQ</h2>
                 <ul>
                     <li>
                         <h3 class="clickable">Question 1?</h3>

@@ -2,6 +2,7 @@
 @import url(/styles/animations.css);
 @import url(/styles/gallery.css);
 @import url(/styles/accordeon.css);
+@import url(/styles/slider.css);
 
 @font-face {
     font-family: 'Roboto';
