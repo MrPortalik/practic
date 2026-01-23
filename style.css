@@ -3,6 +3,7 @@
 @import url(/styles/gallery.css);
 @import url(/styles/accordion.css);
 @import url(/styles/slider.css);
+@import url(/styles/form.css);
 
 @font-face {
     font-family: 'Roboto';
@@ -20,6 +21,10 @@
 body {
     background-color: --bgcolor;
     font-family: 'Roboto';
+
+    ._lock {
+        overflow: hidden;
+    }
 }
 
 .container {
@@ -96,6 +101,7 @@ input, textarea, select {
     font-weight: inherit;
     font-size: inherit;
     line-height: inherit;
+    outline: none;
 }
 
 ul {

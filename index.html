@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Практический проект</title>
+    <title>Practic project</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="/resources/libs/baguetteBox/baguetteBox.min.css">
     <script src="/resources/libs/baguetteBox/baguetteBox.min.js" async></script>
@@ -155,7 +155,7 @@
 
     <section id="slider">
         <div class="container">
-            <h2>Наши работы</h2>
+            <h2>Our products</h2>
 
             <div class="swiper">
                 <div class="swiper-wrapper">
@@ -204,6 +204,42 @@
         </div>
     </section>
 
+    <div id="form">
+        
+        <div class="formContainer">
+            <button class="closeForm">
+                <span></span>
+                <span></span>
+            </button>
+
+            <form action="https://httpbin.org/post" method="post">
+                <h2>Enter contact data</h2>
+                <label for="name">Enter your name</label>
+                <input type="text" name="name" id="name" required>
+                
+                <label for="mail">Enter your e-mail</label>
+                <input type="email" name="mail" id="mail" required>
+
+                <label for="tel">Enter your phone number</label>
+                <input type="tel" name="tel" id="tel" required>
+
+                <p>What contact method do you prefer?</p>
+                <div class="formContacts">
+                    <label for="phone">Tel.</label>
+                    <input type="radio" name="contact" value="phone" id="phone" required>
+
+                    <label for="e-mail">Email</label>
+                    <input type="radio" name="contact" value="e-mail" id="e-mail" required>
+                </div>
+
+                <label for="description">Enter your request</label>
+                <textarea name="description" id="description"></textarea>
+
+                <input type="submit" name="submit" class="submit">
+            </form>
+        </div>
+    </div>
+
     <footer>
         <div class="container">
             <div class="copyright">
@@ -225,6 +261,6 @@
         </div>
     </footer>
 
-    <script rel="script" src="/main.js" type="module"></script>
+    <script rel="script" src="main.js" type="module"></script>
 </body>
 </html>
