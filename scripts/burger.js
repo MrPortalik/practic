@@ -5,4 +5,10 @@ export function burger() {
        menu.classList.toggle('_active');
        menu.classList.toggle('_off')
     })
+    document.addEventListener('click', (event)=> {
+        if (!event.composedPath().includes(menu)) {
+            menu.classList.toggle('_active');
+            menu.classList.toggle('_off')
+        }
+    })
 }
