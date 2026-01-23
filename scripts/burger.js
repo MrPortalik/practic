@@ -7,8 +7,8 @@ export function burger() {
     })
     document.addEventListener('click', (event)=> {
         if (!event.composedPath().includes(menu)) {
-            menu.classList.toggle('_active');
-            menu.classList.toggle('_off')
+            menu.classList.remove('_active');
+            menu.classList.add('_off')
         }
     })
 }
