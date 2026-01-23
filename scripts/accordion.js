@@ -6,9 +6,11 @@ export function accordion() {
             const parent = content.parentNode;
             const active = parent.querySelectorAll('li._opened');
             active.forEach(function(deletable) {
-                deletable.classList.remove('_opened');
+                if (deletable != content) {
+                    deletable.classList.remove('_opened');
+                }
             })
-            content.classList.toggle('_opened');
+                content.classList.toggle('_opened');
             })
         }
     )
