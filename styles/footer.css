@@ -1,0 +1,55 @@
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .copyright {
+        display: flex;
+        gap: 12px;
+
+        img {
+            align-self: center;
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    .media {
+        .telegram {
+            mask-image: url(/resources/images/telegram.svg);
+        }
+
+        .whatsapp {
+            mask-image: url(/resources/images/whatsapp.svg);
+        }
+
+        .icon {
+            mask-position: center;
+            mask-repeat: no-repeat;
+            mask-size: cover;
+            background-color: #141212;
+            width: 24px;
+            height: 24px;
+            display: block;
+        }
+
+        nav {
+            img {
+                height: 40px;
+                width: auto;
+            }
+
+            a:hover {
+                border: #000000;
+            }
+    
+            a:active {
+                background: #25231a;
+            }
+        }
+    }
+}
