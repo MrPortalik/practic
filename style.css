@@ -16,6 +16,7 @@
 
 :root {
     --bgcolor: white;
+    --bgreversedcolor: #000000;
 }
 
 body {
