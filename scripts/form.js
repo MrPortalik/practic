@@ -1,5 +1,4 @@
 export function form() {
-    console.log('Функция работает');
     const buttons = document.querySelectorAll('.requestBtn');
     const section = document.querySelector('#form');
     

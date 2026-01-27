@@ -8,6 +8,7 @@
 @import url(/styles/hero.css);
 @import url(/styles/footer.css);
 @import url(/styles/observed.css);
+@import url(/styles/scroll.css);
 
 @font-face {
     font-family: 'Roboto';

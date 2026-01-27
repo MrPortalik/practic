@@ -1,0 +1,19 @@
+.animatedThing {
+    display: none;
+
+    @media(min-width: 900px) {
+        display: block;
+        width: 25%;
+        aspect-ratio: 1/1;
+        border-radius: 5%;
+        transform: translateX(-150px);
+        will-change: transform;
+
+        img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 5%; 
+        }
+    }
+}
