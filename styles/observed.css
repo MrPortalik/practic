@@ -1,0 +1,27 @@
+#observed picture {
+    padding-inline: 16px;
+    min-height: 10px;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 25px;
+        object-fit: cover;
+        opacity: 0;
+    }
+
+    ._observed {
+        animation-name: observed-animation;
+        animation-duration: 2800ms;
+        animation-fill-mode: forwards;
+    }
+}
+
+@keyframes observed-animation {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}

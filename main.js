@@ -2,6 +2,7 @@ import {burger} from '/scripts/burger.js';
 import {accordion} from '/scripts/accordion.js';
 import {slider} from '/scripts/slider.js';
 import {form} from '/scripts/form.js';
+import {observer} from '/scripts/observer.js'
 
 document.addEventListener('DOMContentLoaded', () => {
     burger();
@@ -9,4 +10,5 @@ document.addEventListener('DOMContentLoaded', () => {
     slider();
     accordion();
     form();
+    observer();
 });

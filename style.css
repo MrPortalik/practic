@@ -7,10 +7,11 @@
 @import url(/styles/headerElement.css);
 @import url(/styles/hero.css);
 @import url(/styles/footer.css);
+@import url(/styles/observed.css);
 
 @font-face {
     font-family: 'Roboto';
-    src: url(/resources/fonts/Roboto-VariableFont_wdth\,wght.ttf);
+    src: url(resources/fonts/Roboto-VariableFont_wdth,wght.ttf);
 }
 
 * {
