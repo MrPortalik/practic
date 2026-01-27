@@ -8,6 +8,11 @@
         overflow: clip;
         border-radius: 25px;
         aspect-ratio: 3/4;
+
+        &:hover {
+            transform: scale(1.02);
+            transition: 200ms;            
+        }
         
         img {
             object-fit: cover;
