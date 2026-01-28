@@ -75,7 +75,6 @@
     }
 }
 
-
 @keyframes bottom-span-out-active {
     from {
         transform: rotate(-45deg);
@@ -91,4 +90,15 @@
     }
 }
 
+[data-animation="spin_step8"] {
+    animation-name              : rotate;
+    animation-duration          : 1.2s;
+    animation-timing-function   : steps(8, start);
+    animation-iteration-count   : infinite;
+}
 
+@keyframes rotate {
+    to {
+        transform               : rotate(360deg);
+    }
+}

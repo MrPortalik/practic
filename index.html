@@ -9,6 +9,7 @@
     <script src="/resources/libs/baguetteBox/baguetteBox.min.js" async></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <link rel="shortcut icon" href="bob.ico" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -81,8 +82,6 @@
             </div>
         </div>
     </header>
-    
-    
     
     <section id="hero">
         <div class="heroImg">
@@ -221,6 +220,28 @@
         </div>
     </section>
 
+    
+    <footer>
+        <div class="container">
+            <div class="copyright">
+                <img src="/resources/images/logo.svg" alt="Logo" width="85" height="35"/>
+                <p>@ 2023 - All rights reserved</p>
+            </div>
+
+            <div class="media">
+                <nav>
+                    <a href="/">
+                        <span class="icon telegram"></span>
+                    </a>
+                    
+                    <a href="/">
+                        <span class="icon whatsapp"></span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    
     <div id="form">
         
         <div class="formContainer">
@@ -229,7 +250,7 @@
                 <span></span>
             </button>
 
-            <form action="https://httpbin.org/post" method="post">
+            <form action="https://httpbin.org/delay/10" method="post">
                 <h2>Enter contact data</h2>
                 <label for="name">Enter your name</label>
                 <input type="text" name="name" id="name" required>
@@ -252,31 +273,14 @@
                 <label for="description">Enter your request</label>
                 <textarea name="description" id="description" required></textarea>
 
-                <input type="submit" name="submit" class="submit">
+                <button type="submit" name="submit" class="submit">Submit</button>
             </form>
         </div>
     </div>
 
-    <footer>
-        <div class="container">
-            <div class="copyright">
-                <img src="/resources/images/logo.svg" alt="Logo" width="85" height="35"/>
-                <p>@ 2023 - All rights reserved</p>
-            </div>
-
-            <div class="media">
-                <nav>
-                    <a href="/">
-                        <span class="icon telegram"></span>
-                    </a>
-
-                    <a href="/">
-                        <span class="icon whatsapp"></span>
-                    </a>
-                </nav>
-            </div>
-        </div>
-    </footer>
+    <div class="loader">
+        <img src="/resources/images/loader.png" alt="Загрузка..." data-animation="spin_step8">
+    </div>
 
     <script rel="script" src="main.js" type="module"></script>
 </body>
