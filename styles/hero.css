@@ -46,8 +46,8 @@
     
     .heroImg {
         position: absolute;
-        top: -56px;
-        right: -8px;
+        top: calc(-56px - 96px);
+        right: 0;
         z-index: -1;
         
         .heroImg img {
@@ -76,7 +76,7 @@
             position: static;
             justify-self: end;
             margin-right: -8px;
-            margin-top: -56px;
+            margin-top: calc(-56px - 96px);
         }
         .heroImg img {
             width: 100%;
@@ -97,7 +97,7 @@
             position: static;
             justify-self: end;
             margin-right: -8px;
-            margin-top: -56px;
+            margin-top: calc(-56px - 96px);
         }
 
         .heroImg img {

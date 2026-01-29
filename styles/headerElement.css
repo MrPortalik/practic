@@ -6,6 +6,7 @@ header {
 header .container {
     display: flex;
     justify-content: space-between;
+    height: 96px;
 
     .linkContainer {
         display: flex;
@@ -26,16 +27,12 @@ header .container {
                     display: none;
             }
         }
-
-        img {
-            height: 35px;
-            width: auto;
-        }
     }
 
     .menuContainer {
         display: flex;
         justify-content: space-between;
+        align-items: center;
         gap: 24px;
 
         .contacts {
@@ -106,3 +103,51 @@ header .container {
     }
 }
 
+.logo {
+    background-image: var(--logo);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    height: 35px;
+    width: 80px;
+}
+
+.toggler {
+    appearance: none;
+    display: flex;
+    width: 40px;
+    height: 20px;
+    border-radius: 15px;
+    align-items: center;
+    padding: 2px;
+    background-color: #003366;
+
+    &._active {
+        background-color: black;
+    }
+
+    &::after {
+        content: '';
+        display: inline-block;
+        height: 16px;
+        aspect-ratio: 1/1;
+        background-color: white;
+        border-radius: 50%;
+    }
+    
+    &._off::after {
+        margin-right: auto;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    &._active::after {
+        transform: translateX(20px);
+        transition: transform 0.3s ease-in-out;
+    }
+}
+
+@media (max-width: 900px) {
+    .menuToggler {
+        display: none;
+    }
+}

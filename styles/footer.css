@@ -7,7 +7,7 @@ footer .container {
         display: flex;
         gap: 12px;
 
-        img {
+        .logo {
             align-self: center;
         }
     }

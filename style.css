@@ -24,6 +24,8 @@
     --bgcolorreversed: black;
     --themecolor: rgba(6, 226, 255, 0.3);;
     --themetextcolor: #0369A1;
+    --animatedObj: url(/resources/images/invader.png);
+    --logo: url(/resources/images/logo.svg);
 }
 
 body {
@@ -40,7 +42,9 @@ body {
         --bgcolor: #302e2d;
         --bgcolorreversed: white;
         --themecolor: #c1dbff;
-        --themetextcolor: rgb(15, 23, 139);
+        --themetextcolor: #003366;
+        --animatedObj: url(/resources/images/invader2.png);
+        --logo: url(/resources/images/logoInv.svg);
 
         .userTxt {
             .userId {

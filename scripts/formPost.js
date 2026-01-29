@@ -16,7 +16,6 @@ export function formPost() {
             
             const data = new FormData();
             const formElements = form.querySelectorAll('input, textarea, select, button');
-            console.log(formElements);
             formElements.forEach(element => {
                 if (element.getAttribute('type') !== 'radio' || (element.getAttribute('type') === 'radio' && element.checked)) {
                     data.append(element.name, element.value);

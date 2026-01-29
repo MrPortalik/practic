@@ -1,4 +1,4 @@
-.animatedThing {
+.animatedBox {
     display: none;
 
     @media(min-width: 900px) {
@@ -6,16 +6,18 @@
         width: 25%;
         aspect-ratio: 1/1;
         border-radius: 5%;
-        transform: translateX(-150px);
-        will-change: transform;
 
-        img {
-            width: 100%;
-            height: auto;
-            object-fit: contain;
+        .animatedThing {
+            display: block;
+            width: 400px;
+            height: 400px;
             border-radius: 5%; 
+            background-image: var(--animatedObj);
+            background-repeat: no-repeat;
+            background-position: center;
+            will-change: transform;
+            transform: translateX(0px);
+            background-size: contain;
         }
     }
 }
-
-/* переделать чтоб потом на картинку все вешалось а родитель обрезался */
