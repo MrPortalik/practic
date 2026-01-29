@@ -43,7 +43,7 @@
 
     input, textArea {
         border: #0369A1 2px solid;
-        border-radius: 2px;
+        border-radius: 15px;
 
         &:focus {
             border: #87c3e4 2px solid;
