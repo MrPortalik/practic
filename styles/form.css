@@ -30,20 +30,20 @@
 
     .submit {
         border-radius: 25px;
-        background-color: rgba(6, 226, 255, 0.3);
+        background-color: var(--themecolor);
         border: transparent;
         font-weight: 600;
         font-size: 18px;
         line-height: 1.6;
         letter-spacing: 0;
         width: 80%;
-        color: #0369A1;
+        color: var(--themetextcolor);
         margin: 15px auto;
         margin-bottom: 0;
     }
 
     input, textArea {
-        border: #0369A1 2px solid;
+        border: var(--themetextcolor) 2px solid;
         border-radius: 15px;
         padding: 4px 6px;
         color: var(--bgcolorreversed);
