@@ -38,17 +38,17 @@ footer .container {
         }
 
         nav {
-            img {
+            svg {
                 height: 40px;
                 width: auto;
             }
 
-            a:hover {
-                border: #000000;
+            svg:hover path {
+                stroke: #42337a;
             }
     
-            a:active {
-                background: #25231a;
+            svg:active path {
+                stroke: #5e5c55;
             }
         }
     }
