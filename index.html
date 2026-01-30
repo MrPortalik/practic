@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!--todo: возможно добавить анимации через промежуточный класс для FAQ и всплывающего бургер меню? ; Поменять цвет свг-->
+<!DOCTYPE html> <!--todo: возможно добавить анимации через промежуточный класс для FAQ и всплывающего бургер меню? ; сохранение состояния-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -205,23 +205,24 @@
             <div class="questionsBlock">
                 <h2>FAQ</h2>
                 <ul>
-                    <li>
+                    <li tabindex="0">
                         <h3 class="clickable">Question 1?</h3>
                         <div class="question">
                             <p>Lorem ipsum</p>
                         </div>
                     </li>
-                    <li>
+                    <li tabindex="0">
                         <h3 class="clickable">Question 2?</h3>
                         <div class="question">
                             <p>Lorem ipsum, dolor? Net.</p>
                         </div>
                     </li>
-                    <li>
-                        <h3 class="clickable">Question 3?</h3>
+                    <li tabindex="0">
+                        <h3 class="clickable" tabindex="0">Question 3?</h3>
                         <div class="question">
                             <p>Lorem ipsum!</p>
                         </div>
+<!--Анимации, кнопка с краю, что меняется от + к крестику, закрывает только клик по заголовку или по кнопке, кнопку поставить в один див с h3 -->
                     </li>
                 </ul>
             </div>
@@ -234,6 +235,7 @@
             <div class="copyright">
                 <a href="" class="logo"></a>
                 <p>@ 2023 - All rights reserved</p>
+                <!-- Дату менять JS -->
             </div>
 
             <div class="media">
@@ -270,8 +272,7 @@
                 <span></span>
             </button>
 
-            <form action="https://httpbin.org/delay/2" method="post">
-                <!-- form action -> https://httpbin.org/delay/10 -->
+            <form method="get">
                 <h2>Enter contact data</h2>
                 <label for="name">Enter your name</label>
                 <input type="text" name="name" id="name" required>

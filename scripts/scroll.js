@@ -10,6 +10,7 @@ export function scroll() {
         const scrollTop = window.scrollY || window.pageYOffset;
 
         const startScroll = scrollTop + blockBounds.top - 350;
+        // Убрать числа из ниоткуда
         const endScroll = scrollTop + blockBounds.bottom - 320;
 
         let progress = (scrollTop - startScroll) / (endScroll - startScroll);

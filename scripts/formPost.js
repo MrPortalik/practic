@@ -1,6 +1,8 @@
 export function formPost() {
     const form = document.querySelector('form');
-    const link = form.action;
+    const url1 = 'https://httpbin.org/post';
+    const url2 = 'https://httpbin.org/delay/2';
+    const url3 = 'https://httpbin.org/status/500';
     const submitButton = form.querySelector('button[type=submit]');
     const bar = form.querySelector('.bar');
 
@@ -24,8 +26,7 @@ export function formPost() {
                 }
             });
 
-
-            const response = await fetch(link, {
+            const response = await fetch(url3, {
                 method: "POST",
                 body: data,
             });
