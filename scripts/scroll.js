@@ -1,9 +1,11 @@
 export function scroll() {
-    const block = document.querySelector('.animatedThing');
-    const container = document.querySelector('.animatedBox');
-    const width = container.getBoundingClientRect().width;
+    window.addEventListener('scroll', calculate);
+    window.addEventListener('resize', calculate);
 
-    window.addEventListener('scroll', () => {
+    function calculate() {
+        const block = document.querySelector('.animatedThing');
+        const container = document.querySelector('.animatedBox');
+        const width = container.getBoundingClientRect().width;
         const blockBounds = block.getBoundingClientRect();
         const scrollTop = window.scrollY || window.pageYOffset;
 
@@ -14,5 +16,5 @@ export function scroll() {
         progress = Math.min(Math.max(progress, 0), 1);
 
         block.style.transform = `translateX(${((width - blockBounds.width) * progress)}px)`;
-    });
+    }
 }
