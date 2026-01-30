@@ -112,6 +112,20 @@ form {
     h2 {
         margin: 0 0 25px 0;
     }
-}
 
-/*обработка ошибок форма (надпись проверки + визуальный элемент) */
+    .bar {
+        background-color: rgb(185, 185, 185);
+        display: inline-block;
+        padding: 2px;
+        width: 200px;
+        margin: 5px auto;
+
+        &._error {
+            background-color: rgb(201, 21, 21);
+        }
+
+        &._success {
+            background-color: rgb(27, 228, 111);
+        }
+    }
+}

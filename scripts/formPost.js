@@ -2,6 +2,8 @@ export function formPost() {
     const form = document.querySelector('form');
     const link = form.action;
     const submitButton = form.querySelector('button[type=submit]');
+    const bar = form.querySelector('.bar');
+
     if (form) {
         form.addEventListener("submit", handleFormSubmit);
     }
@@ -19,7 +21,6 @@ export function formPost() {
             formElements.forEach(element => {
                 if (element.getAttribute('type') !== 'radio' || (element.getAttribute('type') === 'radio' && element.checked)) {
                     data.append(element.name, element.value);
-                    console.log(element);
                 }
             });
 
@@ -30,8 +31,10 @@ export function formPost() {
             });
 
             const result = await response.json()
+            bar.classList.add('_success');
         } catch (error) {
             showError(error);
+         
         } finally {
             toggleLoader();
             enableButton();
@@ -52,6 +55,6 @@ export function formPost() {
     }
 
     function showError() {
-    // Показываем пользователю ошибку
+        bar.classList.add('_error');
     }
 }
