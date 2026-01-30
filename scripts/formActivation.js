@@ -1,17 +1,16 @@
 export function formActivation() {
-    const buttons = document.querySelectorAll('.requestBtn');
+    const buttons = document.querySelectorAll('.formBtn');
     const section = document.querySelector('#form');
     
     buttons.forEach(button => {
         button.addEventListener('click', ()=> {
             section.classList.add('_active');
-            document.body.style.overflow = 'hidden';
             document.querySelector('body').classList.add('_lock');
 
             document.addEventListener('click', (event)=> {
                 if (!event.composedPath().includes(button) && 
                 !event.composedPath().includes(document.querySelector('form'))) {
-                    document.body.style.overflow = 'visible';
+                    document.querySelector('body').classList.remove('_lock');
                     section.classList.remove('_active');
                 }
             })
@@ -19,4 +18,4 @@ export function formActivation() {
     })
 }
 
-//добавить выход из формы по Esc + назначать на утилитарный класс блокировку прокрута
+//добавить выход из формы по Esc
