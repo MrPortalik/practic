@@ -19,6 +19,7 @@
         font-size: 18px;
         line-height: 1.6;
         letter-spacing: 0;
+        color: var(--bgcolorreversed);
 
         @media (max-width: 450px) {
             font-size: 16px;
@@ -45,6 +46,7 @@
         border: #0369A1 2px solid;
         border-radius: 15px;
         padding: 4px 6px;
+        color: var(--bgcolorreversed);
 
         &:focus {
             border: #87c3e4 2px solid;
