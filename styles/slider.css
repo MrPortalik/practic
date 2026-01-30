@@ -2,17 +2,20 @@
   width: 100%;
   height: auto;
 
+  .swiper-button-next, .swiper-button-prev {
+      color: #0369A1;
+  }
+
     @media(max-width: 450px) {
         width: clamp(250px, -50.00px + 100.00vw, 400px);
+        --swipercolor: rgb(87, 87, 87);
 
         .swiper-button-next, .swiper-button-prev {
             color: rgb(213, 218, 218);
+            text-shadow: 1px 1px 0 var(--swipercolor), -1px -1px 0 var(--swipercolor), -1px 1px 0 var(--swipercolor), 1px -1px 0 var(--swipercolor);
         }
     }
 
-    .swiper-button-next, .swiper-button-prev {
-        color: #0369A1;
-    }
 
     .swiper-slide {
         display: flex;
