@@ -1,46 +1,44 @@
+body._changedTheme {
+    footer .media nav {
+        svg:hover path {
+            stroke: #e2e2e2;
+        }
+
+        svg:active path {
+            stroke: #b8b8b8;
+        }
+    }
+}
+
 footer .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
     .copyright {
         display: flex;
         gap: 12px;
-
+        
         .logo {
             align-self: center;
         }
     }
-
+    
     nav {
         display: flex;
         justify-content: space-between;
         gap: 16px;
     }
-
+    
     .media {
-        .telegram {
-            mask-image: url(/resources/images/telegram.svg);
-        }
-
-        .whatsapp {
-            mask-image: url(/resources/images/whatsapp.svg);
-        }
-
-        .icon {
-            mask-position: center;
-            mask-repeat: no-repeat;
-            mask-size: cover;
-            background-color: #141212;
-            width: 24px;
-            height: 24px;
-            display: block;
-        }
-
         nav {
             svg {
                 height: 40px;
                 width: auto;
+            }
+            
+            svg path {
+                stroke: var(--bgcolorreversed);
             }
 
             svg:hover path {
