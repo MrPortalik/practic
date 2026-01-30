@@ -1,6 +1,7 @@
 export function formActivation() {
     const buttons = document.querySelectorAll('.formBtn');
     const section = document.querySelector('#form');
+    const bar = document.querySelector('.bar')
     
     buttons.forEach(button => {
         button.addEventListener('click', ()=> {
@@ -13,6 +14,8 @@ export function formActivation() {
                 !document.getElementById('loader').classList.contains('_active')) {
                     document.querySelector('body').classList.remove('_lock');
                     section.classList.remove('_active');
+                    bar.classList.remove('_success');
+                    bar.classList.remove('_error');
                 }
             })
         })
