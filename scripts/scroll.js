@@ -1,18 +1,18 @@
 export function scroll() {
     const block = document.querySelector('.animatedThing');
-    const container = document.querySelector('.container');
+    const container = document.querySelector('.animatedBox');
     const width = container.getBoundingClientRect().width;
 
     window.addEventListener('scroll', () => {
         const blockBounds = block.getBoundingClientRect();
         const scrollTop = window.scrollY || window.pageYOffset;
 
-        const startScroll = scrollTop + blockBounds.top - 1500;
-        const endScroll = scrollTop + blockBounds.bottom - 200;
+        const startScroll = scrollTop + blockBounds.top - 350;
+        const endScroll = scrollTop + blockBounds.bottom - 320;
 
         let progress = (scrollTop - startScroll) / (endScroll - startScroll);
         progress = Math.min(Math.max(progress, 0), 1);
 
-        block.style.transform = `translateX(${(width * progress - blockBounds.width)}px)`;
+        block.style.transform = `translateX(${((width - blockBounds.width) * progress)}px)`;
     });
 }
