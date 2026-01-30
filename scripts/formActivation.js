@@ -9,7 +9,8 @@ export function formActivation() {
 
             document.addEventListener('click', (event)=> {
                 if (!event.composedPath().includes(button) && 
-                !event.composedPath().includes(document.querySelector('form'))) {
+                !event.composedPath().includes(document.querySelector('form')) && 
+                !document.getElementById('loader').classList.contains('_active')) {
                     document.querySelector('body').classList.remove('_lock');
                     section.classList.remove('_active');
                 }
