@@ -6,6 +6,7 @@ import {scroll} from '/scripts/scroll.js'
 import {formActivation} from '/scripts/formActivation.js';
 import {formPost} from '/scripts/formPost.js';
 import {themeChanging} from '/scripts/themeChanging.js';
+import {initMask} from '/scripts/phone-mask.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     burger();
@@ -17,4 +18,5 @@ document.addEventListener('DOMContentLoaded', () => {
     observer();
     scroll();
     themeChanging();
+    initMask();
 });
