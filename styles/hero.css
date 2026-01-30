@@ -75,7 +75,7 @@
             width: 80%;
             position: static;
             justify-self: end;
-            margin-right: -8px;
+            margin-right: 0px;
             margin-top: calc(-56px - 96px);
         }
         .heroImg img {
@@ -90,27 +90,6 @@
         }
     }
     
-    @media (max-width: 450px) {
-        .heroImg {
-            margin: 0 0;
-            width: 80%;
-            position: static;
-            justify-self: end;
-            margin-right: -8px;
-            margin-top: calc(-56px - 96px);
-        }
-
-        .heroImg img {
-            width: 100%;
-            margin: 0 0;
-        }
-        display: block;
-
-        .heroTxt {
-            width: 100%;
-            justify-content: center;
-        }
-    }
 .requestBtn {
         display: flex;
         flex-direction: row;
