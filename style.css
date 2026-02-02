@@ -19,9 +19,9 @@
     box-sizing: border-box;
 }
 
-
-@media (prefers-color-scheme: light) {
-    body {
+body {
+    
+    &._light {
         --bgcolor: white;
         --bgcolorreversed: black;
         --themecolor: rgba(6, 226, 255, 0.3);;
@@ -29,46 +29,30 @@
         --animatedObj: url(/resources/images/invader.png);
         --logo: url(/resources/images/logo.svg);
     }
-}
 
-@media (prefers-color-scheme: dark) {
-    body {
+    &._dark {
         --bgcolor: #302e2d;
         --bgcolorreversed: white;
         --themecolor: #c1dbff;
         --themetextcolor: #003366;
         --animatedObj: url(/resources/images/invader2.png);
         --logo: url(/resources/images/logoInv.svg);
-    }
-}
 
-body {
-    background-color: var(--bgcolor);
-    font-family: 'Roboto';
-    margin: 0;
-    padding: 0;
-
-    &._lock {
-        overflow: hidden;
-    }
-    
-
-    
-    &._changedTheme {
-        --bgcolor: #302e2d;
-        --bgcolorreversed: white;
-        --themecolor: #c1dbff;
-        --themetextcolor: #003366;
-        --animatedObj: url(/resources/images/invader2.png);
-        --logo: url(/resources/images/logoInv.svg);
-        
         .userTxt {
             .userId {
                 color: #c1dbff;
             }
         }
-
     }
+    
+    &._lock {
+        overflow: hidden;
+    }
+    
+    background-color: var(--bgcolor);
+    font-family: 'Roboto';
+    margin: 0;
+    padding: 0;
 }
 
 .container {

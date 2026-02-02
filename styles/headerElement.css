@@ -122,10 +122,6 @@ header .container {
     padding: 2px;
     background-color: #003366;
 
-    @media (prefers-color-scheme: dark) {
-        background-color: black;
-    }
-
     &::after {
         content: '';
         display: inline-block;
@@ -134,19 +130,21 @@ header .container {
         background-color: white;
         border-radius: 50%;
     }
-    
-    @media (prefers-color-scheme: light) {
-        ::after {
+}
+
+._light .toggler {
+    &::after {
             margin-right: auto;
             transition: transform 0.3s ease-in-out;
-        }
     }
+}
 
-    @media (prefers-color-scheme: dark) {
-        ::after {
+._dark .toggler {
+    background-color: black;
+
+    &::after {
             transform: translateX(20px);
             transition: transform 0.3s ease-in-out;
-        }
     }
 }
 
