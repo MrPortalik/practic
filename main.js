@@ -7,6 +7,7 @@ import {formActivation} from '/scripts/formActivation.js';
 import {formPost} from '/scripts/formPost.js';
 import {schemeColorChanging} from '/scripts/schemeColorChanging.js';
 import {initMask} from '/scripts/phone-mask.js';
+import {dateGet} from './scripts/dateGet.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     burger();
@@ -19,4 +20,5 @@ document.addEventListener('DOMContentLoaded', () => {
     scroll();
     schemeColorChanging();
     initMask();
+    dateGet();
 });
