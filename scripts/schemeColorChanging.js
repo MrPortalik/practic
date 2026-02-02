@@ -3,7 +3,6 @@ export function schemeColorChanging() {
 
     if (localStorage['schemeColor']) {
         body.classList.add(localStorage.getItem('schemeColor'));
-        console.log(localStorage.getItem('schemeColor'));
     }
     else {
         const isLight = window.matchMedia('(prefers-color-scheme: light)');

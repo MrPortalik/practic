@@ -1,16 +1,29 @@
 export function accordion() {
-    const elements = document.querySelectorAll('h3.clickable');
+    const elements = document.querySelectorAll('.head h3, .head button');
+    console.log(elements);
     elements.forEach(function(element) {
-        const content = element.parentNode;
+        const li = element.parentNode.parentNode;
         element.addEventListener('click', ()=> {
-            const parent = content.parentNode;
+            const parent = li.parentNode;
             const active = parent.querySelectorAll('li._opened');
             active.forEach(function(deletable) {
-                if (deletable != content) {
+                if (deletable != li) {
                     deletable.classList.remove('_opened');
                 }
-            })
-                content.classList.toggle('_opened');
+            });
+                
+                li.classList.toggle('_opened');
+                const content = li.querySelector('.content')
+                ;
+                const marginTop = getComputedStyle(content.firstElementChild).marginTop;
+                const marginBottom = getComputedStyle(content.lastElementChild).marginBottom;
+
+                li.classList.contains('_opened') ? 
+                content.style.setProperty('max-height', 'calc(' + content.scrollHeight 
+                    + 'px' + ' + ' + marginTop + ' + ' + marginBottom + ')') :
+                content.style.setProperty('max-height', '0');
+                
+                console.log(content);
             })
         }
     )
