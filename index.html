@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!--todo: возможно добавить анимации через промежуточный класс для FAQ и всплывающего бургер меню? -->
+<!DOCTYPE html> <!--todo: всплывающее бургер меню? -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -15,7 +15,7 @@
     <header>
         <div class="container">
              <div class="linkContainer">
-                <a href="" class="logo"></a>
+                <a href="" class="logo" tabindex="0"></a>
                <nav>
                     <ul>
                         <li>
@@ -42,20 +42,20 @@
                 </nav>
             </div>
             <div class="menuContainer">
-                <input type="checkbox" name="themeChanger" class="toggler menuToggler _off">
+                <input type="checkbox" name="themeChanger" class="toggler menuToggler _off" tabindex="0">
 
                 <a href="tel:555818282" class="contacts">
                     <img src="/resources/images/headphones.svg" alt="headphones">
                     555&nbsp;818&nbsp;282
                 </a>
 
-                <button class="requestBtn formBtn">
+                <button class="requestBtn formBtn" tabindex="0">
                         <span>request a quote</span>
                         <img src="/resources/images/arrow.svg" alt="Arrow" />
                 </button>
 
                 <div class="menuColumn _off">
-                    <button class="burger clickable">
+                    <button class="burger clickable" tabindex="0">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -79,10 +79,10 @@
                                 <a href="">Contacts</a>
                             </li>
                             <li>
-                                <a class="formBtn">Request a quote</a>
+                                <a class="formBtn" tabindex="0">Request a quote</a>
                             </li>
                             <li class="togglerParent">
-                                <input type="checkbox" name="themeChanger" class="toggler _off">
+                                <input type="checkbox" name="themeChanger" class="toggler _off" tabindex="0">
                             </li>
                         </ul>
                     </div>
@@ -93,11 +93,14 @@
     
     <section id="hero">
         <div class="heroImg">
-            <picture><source 
-                srcset="/resources/images/heroImg.webp" type="image/webp">
-                <img src="/resources/images/heroImg.jpeg" alt="Builder" width='740' height="832"/>
+            <picture>
+                <!-- Мне нуден сшакаливатель -->
+                <source media="(max-width: 450px)" srcset="image-small.jpg">
+                <source media="(max-width: 900px)" srcset="image-medium.jpg">
+                <img src="/resources/images/heroImg.webp" alt="Builder" width='740' height="832"/>
             </picture>
         </div>
+
         <div class="container">
             <div class="heroTxt">
                 <div class="quote">
@@ -105,7 +108,7 @@
             
                     <p class="slogan">Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui consequat turpis scelerisque.</p>
             
-                    <button class="requestBtn formBtn">
+                    <button class="requestBtn formBtn" tabindex="0">
                         <span>request a quote</span>
                         <img src="/resources/images/arrow.svg" alt="Arrow" />
                     </button>
@@ -114,7 +117,7 @@
                 <div class="comment">
                     <p>“Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui consequat turpis scelerisque faucibus.”</p>
                     <div class="user">
-                        <img src="/resources/images/userThumb.jpg" alt=""> <!--todo: Добавить pictures и webp-->
+                        <img src="/resources/images/userThumb.jpg" alt="">
                         <div class="userTxt">
                             <p>Rwanda Melflor</p>
                             <p class="userId">zerowaste.com</p>
@@ -184,8 +187,8 @@
                     </div>
                 </div>
 
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev" tabindex="0"></div>
+                <div class="swiper-button-next" tabindex="0"></div>
             </div>
         </div>
     </section>
@@ -208,7 +211,7 @@
                     <li>
                         <div class="head">
                             <h3>Question 1?</h3>
-                            <button>
+                            <button tabindex="0">
                                 <span></span>
                                 <span></span>
                             </button>
@@ -222,7 +225,7 @@
                     <li>
                         <div class="head">
                             <h3>Question 2?</h3>
-                            <button>
+                            <button tabindex="0">
                                 <span></span>
                                 <span></span>
                             </button>
@@ -235,7 +238,7 @@
                     <li>
                         <div class="head">
                             <h3>Question 3?</h3>
-                            <button>
+                            <button tabindex="0">
                                 <span></span>
                                 <span></span>
                             </button>
@@ -243,7 +246,6 @@
                         <div class="content">
                             <p>Lorem ipsum!</p>
                         </div>
-<!--Анимации, кнопка с краю, что меняется от + к крестику, закрывает только клик по заголовку или по кнопке -->
                     </li>
                 </ul>
             </div>
@@ -254,19 +256,19 @@
     <footer>
         <div class="container">
             <div class="copyright">
-                <a href="" class="logo"></a>
+                <a href="" class="logo" tabindex="0"></a>
                 <p class="dateElement">@ {{DATE}} - All rights reserved</p>
             </div>
 
             <div class="media">
                 <nav>
-                    <a href="/">
+                    <a href="/" tabindex="0">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M9 13.5V19L12.2488 15.7229M21 5L2 12.5L9 13.5L21 5ZM21 5L18.5 20L9 13.5L21 5ZM21 5L9 13.5L21 5Z" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </a>
                     
-                    <a href="/">
+                    <a href="/" tabindex="0">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_5117_20583)">
                             <path d="M3 21.0002L4.65 17.2002C3.38766 15.4083 2.82267 13.2172 3.06104 11.0383C3.29942 8.85939 4.32479 6.84235 5.94471 5.36573C7.56463 3.88911 9.66775 3.05443 11.8594 3.01831C14.051 2.9822 16.1805 3.74714 17.8482 5.16959C19.5159 6.59203 20.6071 8.57419 20.9172 10.7441C21.2272 12.914 20.7347 15.1224 19.5321 16.955C18.3295 18.7875 16.4994 20.1182 14.3854 20.6973C12.2713 21.2764 10.0186 21.0641 8.05 20.1002L3 21.0002" stroke="#0F172A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
