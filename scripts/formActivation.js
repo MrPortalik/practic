@@ -8,18 +8,28 @@ export function formActivation() {
             section.classList.add('_active');
             document.querySelector('body').classList.add('_lock');
 
-            document.addEventListener('click', (event)=> {
+            document.addEventListener('click', (event) => {
                 if (!event.composedPath().includes(button) && 
-                !event.composedPath().includes(document.querySelector('form')) && 
-                !document.getElementById('loader').classList.contains('_active')) {
-                    document.querySelector('body').classList.remove('_lock');
-                    section.classList.remove('_active');
-                    bar.classList.remove('_success');
-                    bar.classList.remove('_error');
+                !event.composedPath().includes(document.querySelector('form')) 
+                && !document.getElementById('loader').classList.contains('_active'))
+                {
+                    formLogic();
                 }
-            })
-        })
-    })
-}
+            });
+        });
+    });
+    document.addEventListener('keydown', (event) => {
+        if (event.key == 'Escape') {
+            formLogic();
+        }
+    });
 
-//добавить выход из формы по Esc
+    function formLogic() {
+        {
+            document.querySelector('body').classList.remove('_lock');
+            section.classList.remove('_active');
+            bar.classList.remove('_success');
+            bar.classList.remove('_error');
+        }
+    }
+}

@@ -22,8 +22,6 @@ export function accordion() {
                 content.style.setProperty('max-height', 'calc(' + content.scrollHeight 
                     + 'px' + ' + ' + marginTop + ' + ' + marginBottom + ')') :
                 content.style.setProperty('max-height', '0');
-                
-                console.log(content);
             })
         }
     )
