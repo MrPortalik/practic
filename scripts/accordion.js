@@ -9,6 +9,7 @@ export function accordion() {
             active.forEach(function(deletable) {
                 if (deletable != li) {
                     deletable.classList.remove('_opened');
+                    deletable.lastElementChild.style.setProperty('max-height', '0');
                 }
             });
                 
