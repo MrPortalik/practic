@@ -9,6 +9,9 @@ import {schemeColorChanging} from '/src/scripts/schemeColorChanging.js';
 import {initMask} from '/src/scripts/phone-mask.js';
 import {dateGet} from '/src/scripts/dateGet.js';
 
+const port = process.env.PORT || 10000;
+app.listen(port, () => console.log(`Server started on port ${port}`));
+
 document.addEventListener('DOMContentLoaded', () => {
     burger();
     baguetteBox.run('.galleryBox');
