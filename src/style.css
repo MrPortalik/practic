@@ -1,18 +1,18 @@
-@import url(/styles/burger.css);
-@import url(/styles/animations.css);
-@import url(/styles/gallery.css);
-@import url(/styles/accordion.css);
-@import url(/styles/slider.css);
-@import url(/styles/form.css);
-@import url(/styles/headerElement.css);
-@import url(/styles/hero.css);
-@import url(/styles/footer.css);
-@import url(/styles/observed.css);
-@import url(/styles/scroll.css);
+@import url(/src/styles/burger.css);
+@import url(/src/styles/animations.css);
+@import url(/src/styles/gallery.css);
+@import url(/src/styles/accordion.css);
+@import url(/src/styles/slider.css);
+@import url(/src/styles/form.css);
+@import url(/src/styles/headerElement.css);
+@import url(/src/styles/hero.css);
+@import url(/src/styles/footer.css);
+@import url(/src/styles/observed.css);
+@import url(/src/styles/scroll.css);
 
 @font-face {
     font-family: 'Roboto';
-    src: url(resources/fonts/Roboto-VariableFont_wdth,wght.ttf);
+    src: url(/src/fonts/Roboto-VariableFont_wdth,wght.ttf);
 }
 
 * {
@@ -27,8 +27,8 @@ body {
         --bgcolorreversed: black;
         --themecolor: rgba(6, 226, 255, 0.3);;
         --themetextcolor: #0369A1;
-        --animatedObj: url(/resources/images/invader.webp);
-        --logo: url(/resources/images/logo.svg);
+        --animatedObj: url(/src/images/invader.webp);
+        --logo: url(/src/images/logo.svg);
     }
 
     &._dark {
@@ -36,8 +36,8 @@ body {
         --bgcolorreversed: white;
         --themecolor: #c1dbff;
         --themetextcolor: #003366;
-        --animatedObj: url(/resources/images/invader2.webp);
-        --logo: url(/resources/images/logoInv.svg);
+        --animatedObj: url(/src/images/invader2.webp);
+        --logo: url(/src/images/logoInv.svg);
 
         .userTxt {
             .userId {
