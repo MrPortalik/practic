@@ -27,7 +27,7 @@ body {
         --bgcolorreversed: black;
         --themecolor: rgba(6, 226, 255, 0.3);;
         --themetextcolor: #0369A1;
-        --animatedObj: url(/resources/images/invader.png);
+        --animatedObj: url(/resources/images/invader.webp);
         --logo: url(/resources/images/logo.svg);
     }
 
@@ -36,7 +36,7 @@ body {
         --bgcolorreversed: white;
         --themecolor: #c1dbff;
         --themetextcolor: #003366;
-        --animatedObj: url(/resources/images/invader2.png);
+        --animatedObj: url(/resources/images/invader2.webp);
         --logo: url(/resources/images/logoInv.svg);
 
         .userTxt {

@@ -47,10 +47,8 @@
 ._opened {
     .content {
         display: block;
-        animation-duration: 1500ms;
-        animation-fill-mode: forwards;
         opacity: 1;
-        transition: 0.4s;
+        transition: 0.5s;
     }
 }
 
