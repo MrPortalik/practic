@@ -8,8 +8,10 @@ import {formPost} from '/src/scripts/formPost.js';
 import {schemeColorChanging} from '/src/scripts/schemeColorChanging.js';
 import {initMask} from '/src/scripts/phone-mask.js';
 import {dateGet} from '/src/scripts/dateGet.js';
+import {fromJSON} from '/src/scripts/fromJSON.js';
 
 document.addEventListener('DOMContentLoaded', () => {
+    fromJSON();
     burger();
     baguetteBox.run('.galleryBox');
     slider();

@@ -4,13 +4,13 @@
             "logo": "",
             "navigation": [
                 {"title": "products",
-                "url": "url"},
+                "url": "/"},
                 {"title": "solutions",
-                "url": "url"},
+                "url": "/"},
                 {"title": "services",
-                "url": "url"},
+                "url": "/"},
                 {"title": "configure",
-                "url": "url"}
+                "url": "/"}
             ],
             "phone": "555 818 282"
         },
