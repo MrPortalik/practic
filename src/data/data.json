@@ -1,23 +1,30 @@
 {
     "sections": {
         "header": {
-            "logo": "",
-            "navigation": [
-                {"title": "products",
+            "logo": "/",
+            "ul": [
+                {"content": "Products",
                 "url": "/"},
-                {"title": "solutions",
+                {"content": "Solutions",
                 "url": "/"},
-                {"title": "services",
+                {"content": "Services",
                 "url": "/"},
-                {"title": "configure",
-                "url": "/"}
+                {"content": "Configure",
+                "url": "/"},
+                {"content": "Contacts",
+                "url": "/"},
+                {"content": "Request a quote",
+                "url": "/"},
+                {"content": "",
+                "url": ""}
             ],
             "phone": "555 818 282"
         },
 
         "hero": {
             "title": "Get the Sun to Power Your Home",
-            "slogan": "Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui consequat turpis scelerisque."
+            "slogan": "Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui consequat turpis scelerisque.",
+            "comment": "“Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui consequat turpis scelerisque faucibus.”"
         },
 
         "scroll": {
@@ -26,7 +33,7 @@
 
         "gallery": {
             "title": "Ni-Gallery",
-            "item": [
+            "ul": [
                 {
                     "previewUrl": "/src/images/galleryImages/img1.webp",
                     "imageUrl": "/src/images/galleryImages/img1.webp"
@@ -64,7 +71,7 @@
 
         "slider": {
             "title": "Our products",
-            "item": [
+            "ul": [
                 {
                     "imageUrl": "/src/images/sliderImages/slide3.webp"
                 },
@@ -76,17 +83,17 @@
                 }]
         },
 
-        "observer": {
+        "observed": {
             "title": "Honorable mention",
             "imageUrl": "/src/images/observedImg.webp"
         },
 
         "FAQ": {
             "title": "FAQ",
-            "item": [
+            "ul": [
                 {
                     "head":"Question 1?",
-                    "content": "<p>Lorem ipsum</p> <<p>Lorem ipsum</p>"
+                    "content": "Lorem ipsum <br> Lorem ipsum"
                 },
                 {
                     "head":"Question 2?",
