@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "practic-next-fix",
+=======
+  "name": "next-practic",
+>>>>>>> 519c352 (Initial commit from Create Next App)
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,8 +14,12 @@
   "dependencies": {
     "next": "16.1.6",
     "react": "19.2.3",
+<<<<<<< HEAD
     "react-dom": "19.2.3",
     "swiper": "^12.1.2"
+=======
+    "react-dom": "19.2.3"
+>>>>>>> 519c352 (Initial commit from Create Next App)
   },
   "devDependencies": {
     "babel-plugin-react-compiler": "1.0.0"
