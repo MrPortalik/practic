@@ -1,0 +1,109 @@
+{
+    "sections": {
+        "header": {
+            "logo": "/",
+            "ul": [
+                {"content": "Products",
+                "url": "/"},
+                {"content": "Solutions",
+                "url": "/"},
+                {"content": "Services",
+                "url": "/"},
+                {"content": "Configure",
+                "url": "/"},
+                {"content": "Contacts",
+                "url": "/"},
+                {"content": "Request a quote",
+                "url": "/"},
+                {"content": "",
+                "url": ""}
+            ],
+            "phone": "555 818 282"
+        },
+
+        "hero": {
+            "title": "Get the Sun to Power Your Home",
+            "slogan": "Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui consequat turpis scelerisque.",
+            "comment": "“Viverra viverra nibh enim et aliquam, enim. Tempor, sit mus viverra orci dui consequat turpis scelerisque faucibus.”"
+        },
+
+        "scroll": {
+            "title": "Space invader section"
+        },
+
+        "gallery": {
+            "title": "Ni-Gallery",
+            "ul": [
+                {
+                    "previewUrl": "/src/images/galleryImages/img1.webp",
+                    "imageUrl": "/src/images/galleryImages/img1.webp"
+                },
+                {
+                    "previewUrl": "/src/images/galleryImages/img2.webp",
+                    "imageUrl": "/src/images/galleryImages/img2.webp"
+                },
+                {
+                    "previewUrl": "/src/images/galleryImages/img3.webp",
+                    "imageUrl": "/src/images/galleryImages/img3.webp"
+                },
+                {
+                    "previewUrl": "/src/images/galleryImages/img4.webp",
+                    "imageUrl": "/src/images/galleryImages/img4.webp"
+                },
+                {
+                    "previewUrl": "/src/images/galleryImages/img5.webp",
+                    "imageUrl": "/src/images/galleryImages/img5.webp"
+                },
+                {
+                    "previewUrl": "/src/images/galleryImages/img6.webp",
+                    "imageUrl": "/src/images/galleryImages/img6.webp"
+                },
+                {
+                    "previewUrl": "/src/images/galleryImages/img7.webp",
+                    "imageUrl": "/src/images/galleryImages/img7.webp"
+                },
+                {
+                    "previewUrl": "/src/images/galleryImages/img8.webp",
+                    "imageUrl": "/src/images/galleryImages/img8.webp"
+                }
+            ]
+        },
+
+        "slider": {
+            "title": "Our products",
+            "ul": [
+                {
+                    "imageUrl": "/src/images/sliderImages/slide3.webp"
+                },
+                {
+                    "imageUrl": "/src/images/sliderImages/slide3.webp"
+                },
+                {
+                    "imageUrl": "/src/images/sliderImages/slide3.webp"
+                }]
+        },
+
+        "observed": {
+            "title": "Honorable mention",
+            "imageUrl": "/src/images/observedImg.webp"
+        },
+
+        "FAQ": {
+            "title": "FAQ",
+            "ul": [
+                {
+                    "head":"Question 1?",
+                    "content": "Lorem ipsum <br> Lorem ipsum"
+                },
+                {
+                    "head":"Question 2?",
+                    "content": "<p>Lorem ipsum, dolor? Net</p>"
+                },
+                {
+                    "head":"Question 3?",
+                    "content": "<p>Lorem ipsum!</p>"
+                }
+            ]
+        }
+    }
+}

@@ -1,0 +1,53 @@
+body._changedTheme {
+    footer .media nav {
+        svg:hover path {
+            stroke: #e2e2e2;
+        }
+
+        svg:active path {
+            stroke: #b8b8b8;
+        }
+    }
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .copyright {
+        display: flex;
+        gap: 12px;
+        
+        .logo {
+            align-self: center;
+        }
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+    }
+    
+    .media {
+        nav {
+            svg {
+                height: 40px;
+                width: auto;
+            }
+            
+            svg path {
+                stroke: var(--bgcolorreversed);
+            }
+
+            svg:hover path {
+                stroke: #42337a;
+            }
+    
+            svg:active path {
+                stroke: #5e5c55;
+            }
+        }
+    }
+}

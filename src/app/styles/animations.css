@@ -1,0 +1,151 @@
+@keyframes top-span-in-active {
+    from {
+        transform: rotate(0deg);
+        top: calc(50% - 1px - 7px);
+    }
+    50% {
+        transform: rotate(0deg);
+        top: calc(50% - 1px);
+    }
+    to {
+        transform: rotate(45deg);
+        top: calc(50% - 1px);
+    }
+}
+
+@keyframes middle-span-in-active {
+    from {
+        left: 8px;
+        right: 8px;
+    }
+    50% {
+        left: 8px;
+        right: 8px;
+    }
+    to {
+        left: 50%;
+        right: 50%;
+    }
+}
+
+
+
+@keyframes bottom-span-in-active {
+    from {
+        transform: rotate(0deg);
+        top: calc(50% - 1px + 7px);
+    }
+    50% {
+        transform: rotate(0deg);
+        top: calc(50% - 1px);
+    }
+    to {
+        transform: rotate(-45deg);
+        top: calc(50% - 1px);
+    }
+}
+
+@keyframes top-span-out-active {
+    from {
+        transform: rotate(45deg);
+        top: calc(50% - 1px);
+    }
+    50% {
+        transform: rotate(0deg);
+        top: calc(50% - 1px);
+    }
+    to {
+        transform: rotate(0deg);
+        top: calc(50% - 1px - 7px);
+    }
+}
+
+@keyframes middle-span-out-active {
+    from {
+        left: 50%;
+        right: 50%;
+    }
+    50% {
+        left: 50%;
+        right: 50%;
+    }
+    to {
+        left: 8px;
+        right: 8px;
+    }
+}
+
+@keyframes bottom-span-out-active {
+    from {
+        transform: rotate(-45deg);
+        top: calc(50% - 1px);
+    }
+    50% {
+        transform: rotate(0deg);
+        top: calc(50% - 1px);
+    }
+    to {
+        transform: rotate(0deg);
+        top: calc(50% - 1px + 7px);
+    }
+}
+
+[data-animation="spin_step8"] {
+    animation-name              : rotate;
+    animation-duration          : 1.2s;
+    animation-timing-function   : steps(8, start);
+    animation-iteration-count   : infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform               : rotate(360deg);
+    }
+}
+
+@keyframes rotate45 {
+    from {
+        rotate: 0deg;
+    }
+    to {
+        rotate: 45deg;
+    }
+}
+
+@keyframes rotate-45 {
+    from {
+        rotate: 90deg;
+    }
+    to {
+        rotate: -45deg;
+    }
+}
+
+@keyframes unRotate45 {
+    from {
+        rotate: 45deg;
+    }
+    to {
+        rotate: 0deg;
+    }
+}
+
+@keyframes unRotate-45 {
+    from {
+        rotate: -45deg;
+    }
+    to {
+        rotate: 90deg;
+    }
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        visibility: hidden;
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}

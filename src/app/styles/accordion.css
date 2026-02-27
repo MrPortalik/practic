@@ -1,0 +1,108 @@
+#FAQ ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: transform 0.5s ease-in-out;
+}
+
+#FAQ li{
+    background-color: var(--themecolor);
+    border-radius: 12px;
+    padding: 15px 20px;
+    align-items: center;
+}
+
+#FAQ h3 {
+    font-weight: 600;
+    font-size: clamp(28px, 20.94px + 0.78vw, 36px);
+    line-height: 1.1;
+    letter-spacing: 0;
+    margin: 0;
+    color: var(--themetextcolor);
+            
+
+    @media (max-width: 900px) {
+        font-size: clamp(22px, 16.00px + 1.33vw, 28px);
+        text-align: center;
+    }
+
+    @media (max-width: 450px) {
+        font-size: clamp(18px, 14.00px + 0.89vw, 22px);
+    }
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    opacity: 0;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    
+    p {
+        color: var(--themetextcolor);
+    }
+}
+
+._opened {
+    .content {
+        display: block;
+        opacity: 1;
+        transition: 0.5s;
+    }
+}
+
+#FAQ button {
+        width: 40px;
+        height: 40px;
+        position: relative;
+        border-radius: 50%;
+        background-color: white;
+        border: transparent;
+        display: flex;
+        justify-self: end;
+        justify-items: center;
+        align-items: center;
+        margin-bottom: 5px;
+
+        span {
+            background-color: var(--themetextcolor);
+            display: block;
+            height: 2px;
+            border-radius: 1.5px;
+            position: absolute;
+            left: 8px;
+            right: 8px;
+            
+
+            &:nth-child(1) {
+                animation: unRotate-45;
+                animation-duration: 500ms;
+                animation-fill-mode: forwards;
+            }
+
+            &:nth-child(2) {
+                rotate: 90deg;
+                animation: unRotate45;
+                animation-duration: 500ms;
+                animation-fill-mode: forwards;
+            }
+        }
+    }
+
+#FAQ li._opened button span {
+    &:nth-child(1) {
+        animation-name: rotate-45;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards;
+    }
+
+    &:nth-child(2) {
+        animation-name: rotate45;
+        animation-duration: 500ms;
+        animation-fill-mode: forwards;
+    }
+}
